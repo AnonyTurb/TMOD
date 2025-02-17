@@ -44,11 +44,11 @@
           },
           {
             "position": {
-              "x": 815.9999999999986,
-              "y": 140.00000000000102
+              "x": 815.9999999999977,
+              "y": 140.00000000000176
             },
             "size": {
-              "width": 370,
+              "width": 220,
               "height": 380
             },
             "attrs": {
@@ -58,13 +58,24 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "86ed47bc-5849-4c7c-8312-149eece093c4",
             "zIndex": -1,
+            "id": "86ed47bc-5849-4c7c-8312-149eece093c4",
             "data": {
               "type": "tm.BoundaryBox",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -188,7 +199,7 @@
           },
           {
             "position": {
-              "x": 900,
+              "x": 870,
               "y": 410
             },
             "size": {
@@ -427,8 +438,8 @@
           },
           {
             "position": {
-              "x": 20,
-              "y": 170
+              "x": 110,
+              "y": 220
             },
             "size": {
               "width": 112.5,
@@ -656,51 +667,6 @@
               "providesAuthentication": false,
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Https",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "https",
-              "threats": []
-            },
-            "labels": [
-              "Https"
-            ],
-            "id": "cdee4cc9-6be1-414f-8d21-eff6306eb765",
-            "source": {
-              "x": 133,
-              "y": 200
-            },
-            "target": {
-              "cell": "beb550f0-9c57-44be-a28c-0fc7d5fa1773",
-              "port": "e5c2ef49-d531-4f30-b433-c600fb5003de"
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -1081,6 +1047,99 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "user req",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "https",
+              "threats": []
+            },
+            "labels": [
+              "user req"
+            ],
+            "id": "cdee4cc9-6be1-414f-8d21-eff6306eb765",
+            "source": {
+              "cell": "65841bb8-9103-42fb-80bd-d862ecc175fd",
+              "port": "f2547aca-60e2-479e-9aea-e42cd6e70f80"
+            },
+            "target": {
+              "cell": "beb550f0-9c57-44be-a28c-0fc7d5fa1773",
+              "port": "e5c2ef49-d531-4f30-b433-c600fb5003de"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "check balance",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "https",
+              "threats": []
+            },
+            "labels": [
+              "check balance"
+            ],
+            "id": "cb6d5cb2-c5b6-4fdc-ac35-5df939d86aee",
+            "source": {
+              "x": 680,
+              "y": 310
+            },
+            "target": {
+              "cell": "dff80400-b1ed-4700-b3fd-b70857b12196"
+            }
+          },
+          {
             "position": {
               "x": 325.25,
               "y": 310
@@ -1324,8 +1383,8 @@
           },
           {
             "position": {
-              "x": 900,
-              "y": 280
+              "x": 870,
+              "y": 300.000000000001
             },
             "size": {
               "width": 120,
@@ -1582,6 +1641,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1665,7 +1725,6 @@
               ]
             },
             "id": "d2baa90f-a088-4943-91ce-a18262313dec",
-            "zIndex": 16,
             "data": {
               "type": "tm.Actor",
               "name": "payments",
